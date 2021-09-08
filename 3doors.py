@@ -22,7 +22,7 @@ while True:
 
         # 开启未中奖的门
         DoorOpen = 3
-        for Door in range(0, 2):
+        for Door in range(0, 3):
             if Items[Door] != 1:
                 if Door != FirstChioce:
                     DoorOpen = Door
@@ -36,7 +36,7 @@ while True:
         else:
             # 更换选择，看是否中奖
             ChangeTotal += 1
-            for Chioce in range(0, 2):
+            for Chioce in range(0, 3):
                 if Chioce != FirstChioce:
                     if Chioce != DoorOpen:
                         SecondChioce = Chioce
